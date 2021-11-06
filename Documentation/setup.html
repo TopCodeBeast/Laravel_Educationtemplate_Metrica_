@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Metrica - Laravel 7 Admin & Dashboard Template | Docs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Metrica - Admin & Dashboard Template" name="description" />
+    <meta content="Themesbrand" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- Bootstrap Css -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body data-sidebar="dark">
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+
+        <header id="page-topbar">
+            <div class="navbar-header">
+                <div class="d-flex">
+                    <!-- LOGO -->
+                    <div class="navbar-brand-box">
+
+                        <a href="index.html" class="logo logo-light">
+                            <span class="logo-sm">
+                                <img src="assets/images/logo.png" alt="" height="22">
+                            </span>
+                            <span class="logo-lg">
+                                <img src="assets/images/logo.png" alt="" height="20">
+                            </span>
+                        </a>
+                    </div>
+
+                    <button type="button" class="btn btn-sm px-3 font-size-24 header-item waves-effect" id="vertical-menu-btn">
+                        <i class="mdi mdi-backburger"></i>
+                    </button>
+
+                </div>
+
+                <div class="d-flex">
+
+                    <div class="d-inline-block">
+                        <h5><span class="badge badge-danger float-right">v2.1.0</span></h5>
+                    </div>
+            
+                </div>
+            </div>
+        </header>
+
+        <!-- ========== Left Sidebar Start ========== -->
+        <div class="vertical-menu">
+
+            <div data-simplebar class="h-100">
+
+                <!--- Sidemenu -->
+                <div id="sidebar-menu">
+                    <!-- Left Menu Start -->
+                    <ul class="metismenu list-unstyled" id="side-menu">
+                        <li class="menu-title">Docs</li>
+
+                        <li>
+                            <a href="index.html" class="waves-effect">
+                                <i class="mdi mdi-file-document-box-outline"></i>
+                                <span>Getting Started</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="setup.html" class=" waves-effect">
+                                <i class="mdi mdi-settings-outline"></i>
+                                <span>Setup</span>
+                            </a>
+                        </li>
+
+                        <li class="menu-title">Other</li>
+
+                        <li>
+                            <a href="changelog.html" class=" waves-effect">
+                                <i class="mdi mdi-format-list-bulleted"></i>
+                                <span>Changelog</span>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <!-- Sidebar -->
+            </div>
+        </div>
+        <!-- Left Sidebar End -->
+
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="main-content">
+
+            <div class="page-content">
+                <div class="container-fluid">
+
+                    <!-- start page title -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="page-title-box d-flex align-items-center justify-content-between">
+                                <h4 class="mb-0 font-size-18">Setup Laravel 7</h4>
+
+                                <div class="page-title-right">
+                                    <ol class="breadcrumb m-0">
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Docs</a></li>
+                                        <li class="breadcrumb-item active">Setup Laravel 7</li>
+                                    </ol>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end page title -->
+
+                    <div class="card ">
+                        <div class="card-body">
+                            <div class="p-lg-3">
+                                <p>
+                                    <a href="https://laravel.com/docs/7.x/mix" target="_blank">Laravel Mix</a> provides
+                                    a clean, fluent API for defining basic webpack build steps for your Laravel
+                                    application. Mix supports several common CSS and JavaScript pre-processors.
+                                </p>
+                                <p>
+                                    Please follow below steps to install and setup locally. You will need to make sure
+                                    your server meets the following requirements. If you have any questions please reach
+                                    out to us on our Support Forum:
+                                </p>
+
+                                <h5 class="mt-4">Server Requirements</h5>
+                                <p>
+                                    Before you install, it's important to check that your server meets the
+                                    requirements. To run this project you will need:
+                                </p>
+                                <ul>
+                                    <li>Apache</li>
+                                    <li>MySQL 5.6+</li>
+                                    <li>PHP >= 7.2.5</li>
+                                    <li>BCMath PHP Extension</li>
+                                    <li>Ctype PHP Extension</li>
+                                    <li>Fileinfo PHP extension</li>
+                                    <li>JSON PHP Extension</li>
+                                    <li>Mbstring PHP Extension</li>
+                                    <li>OpenSSL PHP Extension</li>
+                                    <li>PDO PHP Extension</li>
+                                    <li>Tokenizer PHP Extension</li>
+                                    <li>XML PHP Extension</li>
+                                </ul>
+                                <h5 class="mt-4">Installation</h5>
+                                <p>
+                                    Open your terminal at the root directory of the project and run the below command.
+                                </p>
+                                <p class="bg-dark text-white py-2 px-3">
+                                    composer install
+                                </p>
+                                <p>
+                                    run the following command to compile all assets from resources folder to public
+                                    folder.
+                                </p>
+                                <p class="bg-dark text-white py-2 px-3">
+                                    npm run dev
+                                </p>
+                                <p>
+                                    run the following command to generate the key
+                                </p>
+                                <p class="bg-dark text-white py-2 px-3">
+                                    php artisan key:generate
+                                </p>
+
+                                <h5 class="mt-4">Configuration</h5>
+                                <div class="alert alert-info">
+                                    <b>Sensitive Data</b>
+                                    Make sure you store sensitive and private information in a secure location and not
+                                    accessible publicly. DO NOT include the config file in your repository.
+                                </div>
+
+                                <p>You have to add your database credentials in the .env to connect database and run
+                                    migration by follwoing steps.</p>
+
+                                <p>You have to update database details in the .env file as below</p>
+                                <p class="bg-dark text-white py-2 px-3">
+                                    DB_CONNECTION=mysql<br>
+                                    DB_HOST=127.0.0.1<br>
+                                    DB_PORT=3306<br>
+                                    DB_DATABASE=<br>
+                                    DB_USERNAME=<br>
+                                    DB_PASSWORD=
+                                </p>
+
+                                <p>
+                                    Now run the below command to migrate database.
+                                </p>
+                                <p class="bg-dark text-white py-2 px-3">
+                                    php artisan migrate
+                                </p>
+                                <p>
+                                    Now run the below command to run locally.
+                                </p>
+                                <p class="bg-dark text-white py-2 px-3">
+                                    php artisan serve
+                                </p>
+                                <p>
+                                    To change the port address, run the following command:
+                                </p>
+                                <p class="bg-dark text-white py-2 px-3">
+                                    php artisan serve --port=8080
+                                </p>
+
+                                <h5 class="mt-4">Public Directory</h5>
+                                <p>
+                                    After installing Laravel, you should configure your web server's document / web root
+                                    to be the public directory. The index.php in this directory serves as the front
+                                    controller for all HTTP requests entering your application.
+                                </p>
+                                <h5 class="mt-4">Configuration Files</h5>
+                                <p>All of the configuration files for the Laravel framework are stored in the config
+                                    directory. Each option is documented, so feel free to look through the files and get
+                                    familiar with the options available to you.</p>
+                                <h5 class="mt-4">Directory Permissions</h5>
+                                <p>
+                                    After installing Laravel, you may need to configure some permissions. Directories
+                                    within the storage and the bootstrap/cache directories should be writable by your
+                                    web server or Laravel will not run.
+                                </p>
+                                <p class="bg-dark text-white py-2 px-3">
+                                    sudo chmod -R o+rw bootstrap/cache<br>
+                                    sudo chmod -R o+rw storage
+                                </p>
+
+                                <h5 class="mt-4">Pretty URLs</h5>
+
+                                <p>
+                                    Apache Laravel includes a public/.htaccess file that is used to provide URLs without
+                                    the index.php front controller in the path. Before serving Laravel with Apache, be
+                                    sure to enable the mod_rewrite module so the .htaccess file will be honored by the
+                                    server. If the .htaccess file that ships with Laravel does not work with your Apache
+                                    installation, try this alternative:
+                                </p>
+                                <p class="bg-dark text-white py-2 px-3">
+                                    Options +FollowSymLinks -Indexes<br>
+                                    RewriteEngine On<br>
+                                    <br>
+                                    RewriteCond %{HTTP:Authorization} .<br>
+                                    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]<br>
+                                    <br>
+                                    RewriteCond %{REQUEST_FILENAME} !-d<br>
+                                    RewriteCond %{REQUEST_FILENAME} !-f<br>
+                                    RewriteRule ^ index.php [L]
+                                </p>
+
+                                <p>
+                                    Nginx If you are using Nginx, the following directive in your site configuration
+                                    will direct all requests to the index.php front controller:
+                                </p>
+                                <p class="bg-dark text-white py-2 px-3">
+                                    location / {<br>
+                                    try_files $uri $uri/ /index.php?$query_string;<br>
+                                    }
+                                </p>
+
+                            </div> <!-- end padding-->
+                        </div> <!-- end card-body-->
+                    </div> <!-- end card-->
+
+                    <div class="card ">
+                        <div class="card-body">
+                            <div class="p-lg-3">
+                                Metrica uses jQuery, Bootstrap JS framework(at its core) and some of the third-party
+                                plugins. There are may more third party plugin which you can use according to your
+                                needs. The css is already containing matching style for these plugins so you will not
+                                need to do anything around it.
+                            </div> <!-- end padding-->
+
+                            <div class="p-lg-3">
+                                <table class="table table-bordered m-0">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 20%;"><i class="ti-file"></i> File</th>
+                                            <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <code>jquery.js</code>, <code>bootstrap.bundle.min.js</code>,
+                                                <code>jquery.slimscroll</code>, etc.
+                                                <!-- TODO -->
+                                            </td>
+                                            <td>
+                                                These files are used at core of the theme.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <code>app.js</code>
+                                            </td>
+                                            <td>
+                                                This is a main js file. It contains the custom JS code
+                                                needed for features including
+                                                layout, sidebar, etc.
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <code>pages/*.js</code>
+                                            </td>
+                                            <td>
+                                                These are the files containing pages specific code. They are
+                                                mainly used for demo purpose.
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <code>plugins/**.js</code>
+                                            </td>
+                                            <td>
+                                                All supported and integrated third-party plugins are
+                                                included in here.
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div> <!-- end card-body-->
+                    </div> <!-- end card-->
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="header-title">Credits &amp; Official Documentation</h4>
+                            <p>I've used the following resources as listed. These are some awesome creation and I am really thankful to the respective community.</p>
+                            <hr class="hr-dashed">
+                            <ul class="">
+                                <li><a href="https://laravel.com/docs/7.x/">Laravel 7</a></li>
+                                <li><a href="https://getbootstrap.com/">Bootstrap</a></li>
+                                <li><a href="https://jquery.com/">Jquery</a></li>								                
+                                <li><a href="https://github.com/wakirin/Lightpick">Lightpick</a></li>
+                                <li><a href="https://github.com/jessepollak/card">Custombox</a></li>
+                                <li><a href="https://arshaw.com/fullcalendar/">Full Calendar</a></li>
+                                <li><a href="https://github.com/PhilippStein/ng2-ion-range-slider">Range-slider</a></li>
+                                <li><a href="https://github.com/abpetkov/powerange">Powerange</a></li>
+                                <li><a href="https://github.com/sweetalert2/sweetalert2">Sweet-Alert2</a></li>
+                                <li><a href="https://github.com/dbushell/Nestable">Nestable</a></li>
+                                <li><a href="https://github.com/antennaio/jquery-bar-rating">Rating</a></li>
+                                <li><a href="https://github.com/PrismJS/prism">Prism</a></li>
+                                <li><a href="https://github.com/orangehill/bootstrap-session-timeout">Timeout</a></li>
+                                <li><a href="https://github.com/thorst/jquery-idletimer">Idletimer</a></li>
+                                <li><a href="https://github.com/atomiks/tippyjs">Tippy</a></li>
+                                <li><a href="https://github.com/kenwheeler/slick">Slick</a></li>
+                                <li><a href="https://daneden.github.io/animate.css/">Animate.css</a></li>
+                                <li><a href="https://github.com/zenorocha/clipboard.js">Clipboard</a></li>
+                                <li><a href="https://github.com/bevacqua/dragula">Dragula</a></li>
+                                <li><a href="https://fortawesome.github.io/Font-Awesome/">Font-Awesome</a></li>
+                                <li><a href="https://github.com/afeld/emoji-css/">Emoji</a></li>
+                                <li><a href="https://themify.me/themify-icons">Thimify</a></li>
+                                <li><a href="https://github.com/feathericons/feather">Feather</a></li>
+                                <li><a href="https://github.com/stephenhutchings/typicons.font">Typicons</a></li>
+                                <li><a href="https://github.com/google/material-design-icons">MD-icons</a></li>
+                                <li><a href="https://github.com/amitjakhu/dripicons">Dripicons</a></li>
+                                <li><a href="https://www.datatables.net">Datatables</a></li>
+                                <li><a href="https://github.com/nadangergeo/RWD-Table-Patterns">RWD-Table</a></li>
+                                <li><a href="https://github.com/fooplugins/FooTable">Foo-Table</a></li>
+                                <li><a href="https://github.com/tabalinas/jsgrid">JsGrid</a></li>
+                                <li><a href="https://github.com/sindu12jun/table-dragger">table-dragger</a></li>
+                                <li><a href="https://github.com/mindmup/editable-table">Tiny-editable</a></li>
+                                <li><a href="https://github.com/markcell/jquery-tabledit">Tabledit</a></li>
+                                <li><a href="https://github.com/Eonasdan/bootstrap-datetimepicker">Bootstrap Datetimepicker</a></li>
+                                <li><a href="https://github.com/mimo84/bootstrap-maxlength">Bootstrap Maxlength</a></li>								                
+                                <li><a href="https://github.com/istvan-ujjmeszaros/bootstrap-touchspin">Bootstrap Touchspin</a></li>
+                                <li><a href="https://jdewit.github.com/bootstrap-timepicker">Bootstrap Timepicker</a></li>
+                                <li><a href="https://github.com/farbelous/bootstrap-colorpicker">Bootstrap Colorpicker</a></li>
+                                <li><a href="https://github.com/weareoutman/clockpicker">Clockpicker</a></li>
+                                <li><a href="https://github.com/thecreation/jquery-asColorPicker">ColorPicker</a></li>
+                                <li><a href="https://github.com/dio-el-claire/jquery-multiselect">Multiselect</a></li>
+                                <li><a href="https://github.com/select2/select2">Select2</a></li>
+                                <li><a href="https://github.com/xoxco/jQuery-Tags-Input">Tags-Input</a></li>
+                                <li><a href="https://github.com/RobinHerbots/Inputmask">Bootstrap-Inputmask</a></li>
+                                <li><a href="https://github.com/silviomoreto/bootstrap-select">Bootstrap-select</a></li>
+                                <li><a href="https://github.com/vitalets/x-editable">Bootstrap-X-editable</a></li>
+
+                                <li><a href="https://github.com/xing/wysihtml5">Wysihtml5</a></li>
+                                <li><a href="https://github.com/summernote/summernote">Summernote</a></li>					                
+                                <li><a href="https://github.com/JeremyFagis/dropify">Dropify</a></li>
+                                <li><a href="https://parsleyjs.org/">Validation</a></li>
+                                <li><a href="https://github.com/tinymce/tinymce">Tinymce</a></li>
+                                <li><a href="https://github.com/mstratman/jQuery-Smart-Wizard">Wizard</a></li>
+                                <li><a href="https://github.com/DubFriend/jquery.repeater">Repeater</a></li>
+                                <li><a href="https://github.com/fengyuanchen/cropper">Cropper</a></li>
+                                
+                                <li><a href="https://github.com/jquery/jquery-ui">Jquery-ui</a></li>
+                                <li><a href="https://github.com/dimsemenov/Magnific-Popup">Popup</a></li>
+                                <li><a href="https://github.com/guillaumepotier/Parsley.js">Parsley</a></li>
+                                <li><a href="https://github.com/metafizzy/isotope">Isotope</a></li>
+
+                                <li><a href="https://github.com/moment/moment">Moment</a></li>
+                                <li><a href="https://github.com/apexcharts/apexcharts.js">Apex Chart</a></li>								                
+                                <li><a href="https://morrisjs.github.io/morris.js/">Morris</a></li>
+                                <li><a href="https://github.com/DmitryBaranovskiy/raphael">Raphael</a></li>
+                                <li><a href="https://gionkunz.github.io/chartist-js/">Chartist</a></li>
+                                <li><a href="https://chartjs.org/">Chartjs</a></li>
+                                <li><a href="https://omnipotent.net/jquery.sparkline/">Sparkline</a></li>
+                                <li><a href="httpss://github.com/aterrien/jQuery-Knob">JQuery-Knob</a></li>
+                                <li><a href="https://www.flotcharts.org/">Flot-charts</a></li>
+                                <li><a href="https://github.com/benpickles/peity">Peity</a></li>
+                                <li><a href="https://github.com/toorshia/justgage">Justgage</a></li>
+
+                                <li><a href="https://hpneo.github.io/gmaps/">Gmaps</a></li>
+                                <li><a href="https://github.com/Leaflet/Leaflet">Leaflet</a></li>
+                                <li><a href="https://jqvmap.com">Vector Maps</a></li>
+
+                                <li><a href="https://github.com/LinkedInAttic/hopscotch">Hopscotch Tour</a></li>
+                                <li><a href="https://github.com/vakata/jstree">JsTree</a></li>
+
+                                <li><a href="https://github.com/imakewebthings/waypoints">Waypoints</a></li>
+                            </ul>
+                        </div><!--end card-body-->
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="header-title">Support</h4>
+                            <hr class="hr-dashed">
+                            <p class="mt-4">
+                                Once again thank you for purchasing the theme. I am always avaialble to help you. If you have any suggestion or feature to make it more better, I am requesting you to contact me on support@themesbrand.com, I'll try my best to add them in future updates.
+                            </p>
+
+                            <p>
+                                Best,
+                            </p>
+                            <p class="text-primary">
+                                - <strong>Themesbrand</strong>
+                            </p>
+                        </div><!--end card-body-->
+                    </div>
+
+                </div> <!-- container-fluid -->
+            </div>
+            <!-- End Page-content -->
+
+
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            2020 © Themesbrand.
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="text-sm-right d-none d-sm-block">
+                                Crafted with <i class="mdi mdi-heart text-danger"></i> by <a href="https://themesbrand.com/" target="_blank" class="text-muted">Themesbrand</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- end main content-->
+
+    </div>
+    <!-- END layout-wrapper -->
+
+    <!-- JAVASCRIPT -->
+    <script src="assets/libs/jquery/jquery.min.js"></script>
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/metismenu/metisMenu.min.js"></script>
+    <script src="assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="assets/libs/node-waves/waves.min.js"></script>
+
+    <script src="assets/js/app.js"></script>
+
+</body>
+
+</html>

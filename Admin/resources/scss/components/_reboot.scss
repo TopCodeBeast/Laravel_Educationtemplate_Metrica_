@@ -1,0 +1,109 @@
+/* =============
+   General
+============= */
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body{
+  margin: 0;
+  overflow-x: hidden !important;
+  font-size: $font-size-base;
+  background-color: $body-bg;
+  color: $body-color;
+  letter-spacing: 0.1px;
+  line-height: 1.5;
+  position: relative;
+}
+
+.h1,.h2,.h3,.h4,.h5,.h6,
+h1,h2,h3,h4,h5,h6 {
+  color: $gray-700;
+  margin: 10px 0;
+}
+
+
+h1 {
+  line-height: 43px;
+}
+
+h2 {
+  line-height: 35px;
+}
+
+h3 {
+  line-height: 30px;
+}
+
+h4 {
+  line-height: 22px;
+}
+
+
+a {
+  font-family: $font-primary;
+  color: $gray-700;
+  &:hover,&:active,&:focus {
+    outline: 0;
+    text-decoration: none;
+  }
+}
+
+
+p {
+  line-height: 1.6;
+  font-family: $font-secondary;
+  font-size: $font-size-base;
+  font-weight: $font-weight-normal;
+}
+
+* {
+  outline: none !important;
+}
+
+.font-weight-semibold{
+  font-weight: $font-weight-semibold;
+}
+
+.font-weight-semibold-alt{
+  font-weight: 500;
+}
+.nav{
+  &.nav-pills{
+    background-color: $light-alt;
+  }
+}
+
+
+.divider-custom{
+  display: block;
+  text-align: center;
+  overflow: hidden;
+  margin: 1rem 0;
+  .divider-text {
+    position: relative;
+    display: inline-block;
+    font-size: 12px;
+    padding: 2px 6px;
+    color: $dark;
+    border: 1px dashed $border;
+    border-radius: 30px;
+    font-family: $font-secondary;
+    &:after {
+      left: 100%;
+    }
+    &:before {
+      right: 100%;
+    }  
+  }
+  .divider-text:after, 
+  .divider-text:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 9999px;
+    border-top: 1px dashed $border;
+  }
+}

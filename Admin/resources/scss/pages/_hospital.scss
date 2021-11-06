@@ -1,0 +1,125 @@
+//
+// Hospital
+// 
+
+
+.main-widgets-icon{
+  font-size: 28px;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px dashed;
+}
+
+.personal-detail-title {
+  width: 130px;
+  float: left;
+  font-weight: 500;
+  padding-right: 10px;
+  position: relative;
+  display: block;
+}
+.personal-detail-title:after {
+  content: ":";
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.personal-detail-info {
+  padding-left: 150px;
+  display: block;
+}
+
+
+.inline{
+  &.dash-calendar{
+    .datepicker-inline{
+      width: auto;
+      .datepicker-days{        
+        .table-condensed{
+          width: 100%;
+          tbody > tr > td {
+            padding: 10px;         
+            &:hover{
+              background-color: rgba($primary, 0.1);
+            }
+          }
+          th{
+            padding: 10px;
+            font-weight: 600;
+          }
+          
+        }
+      }
+      .datepicker-months{
+        .table-condensed{
+          width: 100%;
+        }       
+      }
+    }
+    .datepicker table tr td.today{
+      background-color: transparent !important;
+      color: $primary;
+    }
+    .datepicker table tr td.today:hover:hover {
+      color: $primary;
+    }
+    .datepicker {
+      .datepicker-switch:hover, 
+      .prev:hover, 
+      .next:hover, 
+      tfoot tr th:hover {
+      background: rgba($primary, 0.1);
+      }
+    }
+    
+  }
+}
+
+.hospital-info{
+  .data-icon{  
+    text-align: center;  
+    i{
+      font-size: 22px;
+      line-height: 60px;
+      display: inline-block;
+      width: 60px;
+      height: 60px;
+      background-color: $gray-100;
+    }
+  }
+  h3{
+    font-weight: 500;
+    color: $gray-700;
+    font-size: 24px;
+  }
+}
+
+.dr-title{
+  font-size: 20px;
+  color: $gray-700;
+  font-weight: 600;
+}
+.dual-btn-icon i{
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  border-radius: 50%;
+  background-color: $primary;
+  color: $white;
+  display: inline-block;
+  margin: 0 -4px 0 14px;
+}
+
+.hospital-dash-activity{
+  max-height: 500px !important;
+}
+
+.dr-pro-pic .dropify-wrapper, 
+#settings_detail .dropify-wrapper {
+  width: 16%;
+  height: 164px;
+  margin-bottom: 30px;
+}

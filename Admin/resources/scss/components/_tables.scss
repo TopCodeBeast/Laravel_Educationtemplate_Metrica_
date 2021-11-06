@@ -1,0 +1,230 @@
+// 
+// _tables.scss
+// 
+
+
+.table {
+  th{
+    color: $gray-700;
+    font-weight: 500;
+    vertical-align: middle;
+    border-color: $table-border-color;
+  }
+  td {
+    font-weight: 400;
+    vertical-align: middle;
+    border-color: $table-border-color;
+  }
+  &.border-dashed{
+    th {
+      font-weight: 500;
+      border-top: 1px dashed $table-border-color;      
+    }
+    td{
+      border-top: 1px dashed $table-border-color;
+    }
+    thead {
+      th {
+        border-bottom: 2px dashed $table-border-color;
+      }
+    }
+  }
+  &.table-bordered{
+    thead{
+      background-color: $gray-200;
+    }
+  }
+  .thead-light {
+    th{
+      color: $gray-700;
+      background-color: $gray-200;
+      border-color: $table-border-color;
+    }
+  }
+  &.table-dark {
+    color: $gray-100;
+    th{
+      color: $gray-100;
+    }
+  }
+}
+
+/*===Datatable===*/
+.table{
+  td {
+    vertical-align: middle;
+    &.highlight {
+      font-weight: bold;
+      color: $info;
+    }
+    &.details-control {
+      background: url('/images/open.png') no-repeat center center;
+      cursor: pointer;
+    }
+  }
+  tr.shown td.details-control {
+    background: url('/images/close.png') no-repeat center center;
+  }
+}
+
+
+  
+  /*== Table Responsive ==*/
+  
+  .table-rep-plugin {
+    .btn-toolbar {
+        display: block;
+    }
+    .btn-default {
+        border: none;
+        background: linear-gradient(14deg, $primary 0%, rgba($primary, 0.6));
+        color: $white;
+        margin-right: 5px;
+        box-shadow: 0 7px 14px 0 rgba($primary, 0.5);
+        transition: .3s ease-out;
+        &:hover,
+        &:focus {
+            color: $white;
+            box-shadow: 0 0 0 2px rgba($primary,.3);
+        }
+    }
+    .btn-default.btn-primary:active,
+    .btn-default.btn-primary:hover,
+    .btn-default.btn-primary:focus {
+        border: none !important;
+        background: linear-gradient(14deg, $primary 0%, rgba($primary, 0.6));
+        color: $white;
+        box-shadow: 0 0 0 2px rgba($primary,.3);
+    }
+    tbody th {
+        font-size: 14px;
+        font-weight: normal;
+    }
+
+    table.focus-on tbody tr.focused th, 
+    table.focus-on tbody tr.focused td {
+      background-color: $primary;
+      color: $white;
+  }
+}
+
+
+
+
+/* Sticky Header */
+.fixed-solution .sticky-table-header {
+  top: 70px !important;
+  background-color: $gray-100;
+  border-top: 1px solid $border_2;
+  border-bottom: 1px solid $border_2;
+}
+
+.table-responsive[data-pattern="priority-columns"]{
+  border: 1px solid $border_2;
+}
+
+.attendance-table{
+  .table thead tr th{
+    padding: 5px;
+  }
+}
+
+/*====Footable table====*/
+
+.dropdown-menu-right {
+  right: 0;
+  left: auto;
+  }
+  .open>.dropdown-menu {
+    display: block;
+}
+.table.footable-details {
+  color: $gray-700;
+}
+.footable-filtering-external ul.dropdown-menu>li>a.custom-control input[type=checkbox], 
+table.footable>thead>tr.footable-filtering>th ul.dropdown-menu>li>a.custom-control input[type=checkbox] {
+  position: absolute;
+  margin-left: -20px;
+  margin-top: 5px;
+}
+
+.footable-filtering-external ul.dropdown-menu>li>a.custom-control>label, 
+table.footable>thead>tr.footable-filtering>th ul.dropdown-menu>li>a.custom-control>label {
+  display: block;
+  padding-left: 30px;
+}
+td.footable-sortable > span.fooicon, 
+th.footable-sortable > span.fooicon { 
+  right: auto !important; 
+  padding-left: 5px; 
+}
+
+
+/*====jsgrid table====*/
+
+.jsgrid {
+  height: auto !important;
+  th{
+    font-weight: 500;
+  }
+}
+.jsgrid-edit-row > .jsgrid-cell, 
+.jsgrid-filter-row > .jsgrid-cell, 
+.jsgrid-grid-body, .jsgrid-grid-header, 
+.jsgrid-header-row > .jsgrid-header-cell, 
+.jsgrid-insert-row > .jsgrid-cell {
+  background: inherit;
+  border-color: $table-border-color;
+  height: auto !important;
+  overflow: auto;
+}
+.jsgrid-cell {
+  padding: 0.75rem;
+  border:1px solid $table-border-color;
+}
+.jsgrid-alt-row>.jsgrid-cell {
+  background: transparent;
+}
+.jsgrid-cell input,
+.jsgrid-cell select{
+    border:1px solid $table-border-color;
+    box-shadow: none;
+    outline: 0 none;
+    padding: 8px;
+    background-color: $input-bg;
+    color: $gray-700;
+}
+.jsgrid-header-row{
+  font-weight: 300 !important;
+  color: $gray-700;
+  background-color: $light;
+}
+.jsgrid-selected-row>.jsgrid-cell {
+  background: $gray-200;
+  border-color: $table-border-color;
+}
+.jsgrid-align-right{
+  text-align: center;
+}
+
+.jsgrid-header-sortable{
+    text-align: center;
+}
+
+.jsgrid-pager-container{
+  margin-top: 16px;
+}
+
+.jsgrid .jsgrid-button {
+  width: 22px;
+  height: 22px;
+  border: none;
+  cursor: pointer;
+  background-image: url('../../plugins/jsgrid/jsgrid.png');
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+
+.jsgrid-row>.jsgrid-cell{
+  background: $light-alt;
+}

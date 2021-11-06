@@ -1,0 +1,225 @@
+/*
+Template Name: Metrica - Admin & Dashboard Template
+Author: Mannatthemes
+File: Topbar
+*/
+
+
+
+.topbar {
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  max-height: $topbar-height;
+  .topbar-left {
+      background-color: $brand-light-bg;
+      float: left;
+      text-align: center;
+      height: $topbar-height;
+      position: relative;
+      width: $topbar-left-width;
+      z-index: 1;
+      .logo {
+          line-height: $topbar-height;
+          .logo-sm {
+              height: 30px;                
+          }
+          .logo-lg {
+              height: 16px;
+              margin-left: 2px;
+              display: $logo-dark;
+              &.logo-light{
+                display: $logo-light;
+            }
+          }  
+      }
+  }
+}
+
+.navbar-custom {
+  background: $bg-navbar;
+  margin-left: $leftbar-width;
+  min-height: $topbar-height;
+  box-shadow: $topbar-box-shadow;
+  position: relative;
+  .nav-link {
+      padding: 0 0.75rem;
+      color: $header-item-color;
+      line-height: $topbar-height;
+      max-height: $topbar-height;
+      .nav-icon {
+          font-size: 18px;
+      }
+  }
+  .dropdown-toggle {
+      &:after {
+          content: initial;
+      }
+  }
+  .topbar-nav {
+      li {
+          float: left;
+          &.show {
+              .nav-link {
+                  background-color: lighten($bg-navbar, 3%);
+                  color: $topbar-nav-link-active-color;
+              }
+          }
+         
+      }
+  }
+}
+
+.button-menu-mobile {
+  border: none;
+  color: $vertical-menu-btn-color !important;
+  width: 60px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.nav-user {
+  .nav-user-name {
+      vertical-align: middle;
+  }
+  img {
+      height: 36px;
+      width: 36px;
+  }
+}
+
+/* Notification */
+
+.notification-list {
+  max-height: 220px;
+  margin-left: 0;
+  .noti-icon {
+      font-size: 22px;
+      vertical-align: middle;
+      color: $noti-icon-color;
+  }
+  .noti-icon-badge {
+      display: inline-block;
+      position: absolute;
+      top: 14px;
+      right: 8px;
+      border: 2px solid rgba($white, 0.6);
+      border-radius: 50%;
+      padding: 2px 4px 2px;
+      font-size: 9px;
+  }
+}
+
+// Search
+
+.app-search .form-control, 
+.app-search .form-control:focus {
+  border: 1px solid $topbar-search-border-color;
+  font-size: 13px;
+  height: 34px;
+  color: $topbar-search-color;
+  padding-left: 20px;
+  padding-right: 40px;
+  background: $topbar-search-bg;
+  box-shadow: none;
+  border-radius: 40px;
+  width: 300px;
+}
+
+.app-search {
+  position: relative;
+  padding-top: 18px;
+  margin-left: 20px;
+}
+
+.app-search input.form-control::-webkit-input-placeholder {
+  color: $app-search-placeholder-color;
+}
+
+.app-search input.form-control:-moz-placeholder {
+  color: $app-search-placeholder-color;
+}
+
+.app-search input.form-control::-moz-placeholder {
+  color: $app-search-placeholder-color;
+}
+
+.app-search input.form-control:-ms-input-placeholder {
+  color: $app-search-placeholder-color;
+}
+
+.app-search a {
+  position: absolute;
+  top: 18px;
+  right: 0;
+  display: block;
+  height: 34px;
+  line-height: 34px;
+  width: 34px;
+  text-align: center;
+  background: $topbar-search-btn-color;
+  border: 1px solid $topbar-search-border-color;
+  border-radius: 50%;
+  color: $app-search-placeholder-color;
+}
+
+.system-text{
+  font-family: $font-secondary;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 30%;
+  z-index: 10;
+  h4{
+    font-size: 20px;
+  }
+  p{
+    font-size: 15px;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .topbar {
+      .topbar-left {
+          width: $leftbar-width-collapsed;            
+          .logo-lg {
+              display: none !important; 
+          }
+      }
+      .navbar-custom {
+          margin-left: $leftbar-width-collapsed;
+      }
+      .app-search {
+          .form-control,
+          .form-control:focus{
+              width: 230px;
+          }  
+      }
+  }   
+}
+
+@media (max-width: 768px) and (max-width: 1023.98px){
+  .app-search{
+      display: none;
+  }
+}
+
+@media (max-width: 767px){
+  .app-search,
+  .hidden-sm {
+      display: none;
+  }
+}
+
+@media (max-width: 375px){
+  
+  .page-title-box {
+      .breadcrumb{
+          display: none;
+      }
+  }
+}
+

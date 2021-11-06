@@ -1,0 +1,212 @@
+//
+// Account Pages
+// 
+
+.account-body{
+  background-color: $card-bg;  
+  .auth-page{
+    max-width: 460px;
+    position: relative;
+    margin: 0 auto;
+  }
+  .auth-card{
+    border-radius: 20px;
+    .auth-logo-box{
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: -25px;
+      text-align: center;
+      .auth-logo{
+        border-radius: 50%;
+        background-color: $white;
+        padding: 4px;
+        box-shadow: 0px 0px 0px 2.25px $gray-200;
+      }
+    }
+    .auth-logo-text{
+      font-family: $font-secondary;
+      h4{
+        font-weight: 600;
+        color: $gray-700;
+        font-size: 22px;
+      }
+    }  
+  }
+
+  &.accountbg {
+    
+    background: radial-gradient(circle at 39% 47%, 
+   rgba(107, 107, 107,0.08) 0%,
+   rgba(107, 107, 107,0.08) 33.333%,
+   rgba(72, 72, 72,0.08) 33.333%, 
+   rgba(72, 72, 72,0.08) 66.666%,
+   rgba(36, 36, 36,0.08) 66.666%, 
+   rgba(36, 36, 36,0.08) 99.999%),
+   radial-gradient(circle at 53% 74%, 
+   rgba(182, 182, 182,0.08) 0%, 
+   rgba(182, 182, 182,0.08) 33.333%,
+   rgba(202, 202, 202,0.08) 33.333%, 
+   rgba(202, 202, 202,0.08) 66.666%,
+   rgba(221, 221, 221,0.08) 66.666%, 
+   rgba(221, 221, 221,0.08) 99.999%),
+   radial-gradient(circle at 14% 98%, 
+   rgba(184, 184, 184,0.08) 0%, 
+   rgba(184, 184, 184,0.08) 33.333%,
+   rgba(96, 96, 96,0.08) 33.333%, 
+   rgba(96, 96, 96,0.08) 66.666%,
+   rgba(7, 7, 7,0.08) 66.666%, 
+   rgba(7, 7, 7,0.08) 99.999%),
+   linear-gradient(45deg, #f79f9b,#0f4069);
+    width: 100%;
+    height: 100vh;
+    .account-title{
+      width: 500px;
+      position: relative;
+      display: block;
+      margin: 0 auto;
+      h1{
+        font-size: 60px;
+        font-weight: 700;
+        margin: 30px 0;
+      }
+    }
+  }
+
+  
+
+  .account-social {
+    h6{
+      color: $white;
+    }
+    h6:after {
+      display: inline-block;
+      margin: 0 6px 4px 6px;
+      height: 2px;
+      content: " ";
+      text-shadow: none;
+      background-color: #fdc3c3;
+      width: 110px;
+    }
+    h6:before {
+      display: inline-block;
+      margin: 0 6px 4px 6px;
+      height: 2px;
+      content: " ";
+      text-shadow: none;
+      background-color: #fdc3c3;
+      width: 110px;
+    }
+    
+    a{
+      i {
+        width: 36px;
+        height: 36px;
+        line-height: 36px;
+        text-align: center;
+        display: inline-block;
+        border-radius: 50%;
+        font-size: 14px;
+        z-index: 5;
+        &.facebook{
+          background-color: $primary;
+          color: $white;
+        }
+        &.twitter{
+          background-color: $secondary;
+          color: $white;
+        }
+        &.google{
+          background-color: $pink;
+        color: $white;
+        }
+      }
+      &:hover .facebook{
+        color: $white;
+        background-color: lighten($primary, 5%);
+      }
+      &:hover .twitter{
+        color: $white;
+        background-color: lighten($secondary, 5%);
+      }
+      &:hover .google{
+        color: $white;
+        background-color: lighten($pink, 5%);
+      }
+    }
+  }
+}
+.auth-form{
+  .form-control{
+    border-radius: $border-radius-auth;
+    padding-right: 40px;
+  }
+  .auth-form-icon{
+    width: 32px;
+    height: 32px;
+    background-color: $gray-200;
+    text-align: center;
+    line-height: 34px;
+    border-radius: 50%;
+    position: absolute;
+    right: 3px;
+    z-index: 100;
+    top: 3px; 
+    color: $info;     
+  }   
+  .input-group>.form-control:not(:first-child), 
+  .input-group>.custom-select:not(:first-child) {
+    border-radius: $border-radius-auth;
+  }
+}
+
+.auth-bg{
+ 
+  background: radial-gradient(circle at 39% 47%, 
+  rgba(107, 107, 107,0.08) 0%,
+  rgba(107, 107, 107,0.08) 33.333%,
+  rgba(72, 72, 72,0.08) 33.333%, 
+  rgba(72, 72, 72,0.08) 66.666%,
+  rgba(36, 36, 36,0.08) 66.666%, 
+  rgba(36, 36, 36,0.08) 99.999%),
+  radial-gradient(circle at 53% 74%, 
+  rgba(182, 182, 182,0.08) 0%, 
+  rgba(182, 182, 182,0.08) 33.333%,
+  rgba(202, 202, 202,0.08) 33.333%, 
+  rgba(202, 202, 202,0.08) 66.666%,
+  rgba(221, 221, 221,0.08) 66.666%, 
+  rgba(221, 221, 221,0.08) 99.999%),
+  radial-gradient(circle at 14% 98%, 
+  rgba(184, 184, 184,0.08) 0%, 
+  rgba(184, 184, 184,0.08) 33.333%,
+  rgba(96, 96, 96,0.08) 33.333%, 
+  rgba(96, 96, 96,0.08) 66.666%,
+  rgba(7, 7, 7,0.08) 66.666%, 
+  rgba(7, 7, 7,0.08) 99.999%),
+  linear-gradient(45deg, #f79f9b,#0f4069);
+}
+
+
+.auth-page{
+  .logo-lg.logo-light{
+    display: $logo-light;
+  }
+  .logo-lg.logo-dark{
+    display: $logo-dark;
+  }
+}
+@media (max-width: 768px) {
+  .auth-card{
+    margin-top: 34px;
+  }
+}
+
+input:-internal-autofill-selected,
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:active,
+input:-webkit-autofill:focus {
+  background-color: $card-bg !important;
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-box-shadow: 0 0 0px 1000px $card-bg inset !important;
+}

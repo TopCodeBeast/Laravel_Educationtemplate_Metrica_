@@ -1,0 +1,16 @@
+// 
+// _card.scss
+// 
+
+.card {
+  box-shadow: $box-shadow;
+  margin-bottom: 24px;
+  background-color: $card-bg;
+  border-radius: $card-radius;
+  .card-header{
+    background-color: $gray-200;
+  }
+}
+
+
+

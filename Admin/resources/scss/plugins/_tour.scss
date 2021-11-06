@@ -1,0 +1,16 @@
+//
+// Tour
+// 
+
+div.hopscotch-bubble {
+  background-color: $card-bg;
+  border: 5px solid $gray-700;
+  border: 5px solid rgba($gray-700,.5);
+  color: $gray-700;
+  h3 {
+    color: $gray-700;
+  }
+  .hopscotch-content{
+    color: $text-muted;
+  }
+}
